@@ -1,4 +1,5 @@
 package com.example.architect.entity;
+import net.minecraft.item.Item;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -166,7 +167,7 @@ public class ConstructEntity extends PathAwareEntity {
     }
 
     @Override
-    protected void writeCustomDataToNbt(NbtCompound nbt) {
+    public void writeCustomDataToNbt(NbtCompound nbt) {
         super.writeCustomDataToNbt(nbt);
         nbt.putInt("type", type);
         nbt.putInt("evo", evolution);
