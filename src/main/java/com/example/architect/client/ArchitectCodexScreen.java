@@ -52,7 +52,9 @@ public class ArchitectCodexScreen extends Screen {
                 final int idx = i;
                 boolean unlocked = ClientCodex.UNLOCKED.contains(i);
                 String label = (unlocked ? "§a" : "§7") + CHAPTERS[i];
-                this.addDrawableChild(ButtonWidget.builder(Text.literal(label), b -> page = i + 1)
+                int targetPage = i + 1;
+this.addDrawableChild(ButtonWidget.builder(Text.literal(label), b -> page = targetPage)
+
                         .dimensions(this.width / 2 - 180, y, 360, 20).build());
                 y += 24;
             }
