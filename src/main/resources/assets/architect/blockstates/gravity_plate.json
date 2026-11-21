@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "architect:block/gravity_plate"
+    }
+  }
+}

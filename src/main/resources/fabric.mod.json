@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "architect",
+  "version": "${version}",
+  "name": "Legacy of the Ancient Architect",
+  "description": "9 construct allies, the Architect Codex GUI book, Ancient Towers and the Corrupted Colossus boss.",
+  "authors": ["Example"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.architect.ArchitectMod"],
+    "client": ["com.example.architect.client.ArchitectClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}

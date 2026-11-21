@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "architect:block/rune_core"
+    }
+  }
+}

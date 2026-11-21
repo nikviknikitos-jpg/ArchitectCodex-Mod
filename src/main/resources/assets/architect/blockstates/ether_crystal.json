@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "architect:block/ether_crystal"
+    }
+  }
+}
