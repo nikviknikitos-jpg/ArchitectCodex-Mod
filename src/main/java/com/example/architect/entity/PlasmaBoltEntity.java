@@ -1,4 +1,5 @@
 package com.example.architect.entity;
+import net.minecraft.entity.player.PlayerEntity;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -28,7 +29,8 @@ public class PlasmaBoltEntity extends ThrownItemEntity {
             getWorld().addParticle(ParticleTypes.END_ROD, getX(), getY(), getZ(), 0, 0, 0);
             getWorld().addParticle(ParticleTypes.SOUL_FIRE_FLAME, getX(), getY(), getZ(), 0, 0, 0);
         } else if (life % 5 == 0) {
-            var hit = net.minecraft.util.math.Box.from(this.getBoundingBox()).expand(1.0);
+            var hit = this.getBoundingBox().expand(1.0);
+
             for (LivingEntity le : getWorld().getEntitiesByClass(LivingEntity.class, hit,
                     e -> e.isAlive() && !((Object) e instanceof PlayerEntity) && !(e instanceof ConstructEntity))) {
                 le.damage(getWorld().getDamageSources().magic(), 8.0f);
