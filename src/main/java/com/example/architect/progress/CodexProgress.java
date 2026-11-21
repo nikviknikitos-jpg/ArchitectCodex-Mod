@@ -24,7 +24,7 @@ public class CodexProgress {
         Set<Integer> s = get(p);
         if (s.add(chapter)) {
             CodexSync.send(p);
-            p.playSound(net.minecraft.sound.SoundEvents.BLOCK_NOTE_BLOCK_CHIME,
+            p.playSound(net.minecraft.sound.SoundEvents.ENTITY_PLAYER_LEVELUP,
                     net.minecraft.sound.SoundCategory.PLAYERS, 1.5f, 1.4f);
             p.sendMessage(Text.literal("§6Новая глава расшифрована в Кодексе Архитектора!"), false);
         }
